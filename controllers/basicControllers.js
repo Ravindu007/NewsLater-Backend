@@ -22,10 +22,10 @@ const getAllData = async(req, res) => {
 
   // make a post request to mailchimp 
   try{
-      const response = await fetch(`https://us21.api.mailchimp.com/3.0/lists/${process.env.LIST_ID}`,{
+      const response = await fetch(`https://us21.api.mailchimp.com/3.0/lists/9e65659159`,{
       method:"POST",
       headers:{
-        'Authorization':`Bearer ${process.env.MAILCHIMP_API}`
+        'Authorization':`Bearer 91ee1934c1c0fb1d3302ab9cf97e76b6-us21`
       },
       body:jsonData
       })
